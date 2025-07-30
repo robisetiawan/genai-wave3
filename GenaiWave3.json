@@ -1,0 +1,68 @@
+{
+  "v": 9,
+  "name": "GenaiWave3",
+  "folders": [],
+  "requests": [
+    {
+      "v": "15",
+      "endpoint": "http://localhost:3000/generate-text",
+      "name": "Generate Text",
+      "params": [],
+      "headers": [],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "application/json",
+        "body": "{\n  \"prompt\" : \"Halo Gemini\"\n}"
+      },
+      "requestVariables": [],
+      "responses": {}
+    },
+    {
+      "v": "15",
+      "endpoint": "http://localhost:3000/generate-text-from-image",
+      "name": "Generate Text From Image",
+      "params": [],
+      "headers": [],
+      "method": "POST",
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "preRequestScript": "",
+      "testScript": "",
+      "body": {
+        "contentType": "multipart/form-data",
+        "body": [
+          {
+            "key": "prompt",
+            "value": "Mohon jelaskan gambar berkut",
+            "active": true,
+            "isFile": false
+          },
+          {
+            "key": "image",
+            "value": [
+              {}
+            ],
+            "active": true,
+            "isFile": true
+          }
+        ]
+      },
+      "requestVariables": [],
+      "responses": {}
+    }
+  ],
+  "headers": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "_ref_id": "coll_mdq492f0_73b4d559-fd9f-4b0c-a809-8bf9e4560b1b"
+}
